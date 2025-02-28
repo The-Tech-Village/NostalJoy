@@ -45,24 +45,6 @@ const PopupModal = ({ isOpen, setIsOpen }) => {
           marginBottom: '25px',
           color: '#fff'
         }}>Get all the nostalgic games at one place! Discover and play your favorite classic games from the golden era of gaming.</p>
-        <h3 style={{
-          fontSize: '1.4rem',
-          color: '#ffa500',
-          marginBottom: '15px',
-          textAlign: 'center'
-        }}>Want to play old games on android? a quick tutorial for you! 🕹️</h3>
-        <div style={{ marginBottom: '25px' }}>
-          <iframe
-            width="100%"
-            height="315"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="Retro Gaming Montage"
-            frameBorder="0"
-            allowFullScreen
-            style={{ borderRadius: '10px' }}
-          ></iframe>
-        </div>
-
         <button 
           onClick={() => setIsOpen(false)}
           style={{
@@ -83,6 +65,23 @@ const PopupModal = ({ isOpen, setIsOpen }) => {
         >
           Get the Games! 🎮
         </button>
+        <h3 style={{
+          fontSize: '1.4rem',
+          color: '#ffa500',
+          marginBottom: '15px',
+          textAlign: 'center'
+        }}>Want to play old games on android? a quick tutorial for you! 🕹️</h3>
+        <div style={{ marginBottom: '25px' }}>
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Retro Gaming Montage"
+            frameBorder="0"
+            allowFullScreen
+            style={{ borderRadius: '10px' }}
+          ></iframe>
+        </div>
       </div>
     </Modal>
   );
