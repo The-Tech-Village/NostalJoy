@@ -4,20 +4,24 @@ import Modal from "react-modal";
 const PopupModal = ({ isOpen, setIsOpen }) => {
   const customStyles = {
     overlay: {
-      backgroundColor: 'rgba(0, 0, 0, 0.75)'
+      backgroundColor: 'rgba(0, 0, 0, 0.75)',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      padding: '10px'
     },
     content: {
-      top: '50%',
-      left: '50%',
-      right: 'auto',
-      bottom: 'auto',
-      transform: 'translate(-50%, -50%)',
+      position: 'relative',
+      inset: 'auto',
+      margin: 'auto',
       backgroundColor: '#1e1e1e',
       border: '2px solid #ffa500',
       borderRadius: '15px',
-      padding: '30px',
+      padding: '20px',
       maxWidth: '600px',
-      width: '90%',
+      width: '100%',
+      maxHeight: '90vh',
+      overflow: 'auto',
       color: '#ffa500'
     }
   };
@@ -31,7 +35,7 @@ const PopupModal = ({ isOpen, setIsOpen }) => {
     >
       <div className="modal-content">
         <h2 style={{
-          fontSize: '2.5rem',
+          fontSize: '1.5rem',
           background: 'linear-gradient(45deg, #4285f4, #ea4335, #fbbc05, #34a853)',
           WebkitBackgroundClip: 'text',
           backgroundClip: 'text',
@@ -40,7 +44,7 @@ const PopupModal = ({ isOpen, setIsOpen }) => {
         }}>Welcome to NostalJoy! 👾</h2>
         
         <p style={{
-          fontSize: '1.2rem',
+          fontSize: '0.7rem',
           lineHeight: '1.6',
           marginBottom: '25px',
           color: '#fff'
@@ -49,7 +53,8 @@ const PopupModal = ({ isOpen, setIsOpen }) => {
           onClick={() => setIsOpen(false)}
           style={{
             padding: '12px 30px',
-            fontSize: '1.1rem',
+            fontSize: '0.8rem',
+            fontFamily: '"Press Start 2P", cursive',
             backgroundColor: '#ffa500',
             color: '#121212',
             border: 'none',
@@ -66,10 +71,11 @@ const PopupModal = ({ isOpen, setIsOpen }) => {
           Get the Games! 🎮
         </button>
         <h3 style={{
-          fontSize: '1.4rem',
+          fontSize: '0.7rem',
           color: '#ffa500',
           marginBottom: '15px',
-          textAlign: 'center'
+          textAlign: 'center',
+          lineHeight: '1.6',
         }}>Want to play old games on android? a quick tutorial for you! 🕹️</h3>
         <div style={{ marginBottom: '25px' }}>
           <iframe

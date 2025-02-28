@@ -6,6 +6,7 @@ const SearchBar = ({ setSearchTerm }) => {
       type="text"
       placeholder="Search for classic games..."
       className="search-bar"
+      style={{ fontFamily: '"Press Start 2P", cursive', fontSize:"0.6rem"}}
       onChange={(e) => setSearchTerm(e.target.value)}
     />
   );

@@ -12,7 +12,7 @@ const App = () => {
 
   // Background animation emojis
   const backgroundEmojis = ["👾", "🕹️", "🎮", "🎲", "🏆", "💫", "⭐", "🌟"];
-  
+
   useEffect(() => {
     // Create floating emojis
     const createEmoji = () => {
@@ -23,9 +23,9 @@ const App = () => {
       emoji.style.animationDuration = Math.random() * 3 + 2 + "s";
       emoji.style.opacity = Math.random() * 0.5 + 0.3;
       emoji.style.fontSize = Math.random() * 20 + 15 + "px";
-      
+
       document.body.appendChild(emoji);
-      
+
       setTimeout(() => {
         emoji.remove();
       }, 5000);
@@ -102,11 +102,12 @@ const App = () => {
       <PopupModal isOpen={showModal} setIsOpen={setShowModal} />
       <h1 className="title">NostalJoy 👾</h1>
       <SearchBar setSearchTerm={setSearchTerm} />
-      <button 
+      <button
         onClick={() => setShowAllGames(!showAllGames)}
         style={{
           padding: '10px 20px',
-          fontSize: '1rem',
+          fontSize: '0.8rem',
+          fontFamily: '"Press Start 2P", cursive',
           backgroundColor: '#ffa500',
           color: '#121212',
           border: 'none',
@@ -127,19 +128,42 @@ const App = () => {
         left: 0,
         width: '100%',
         borderTop: '2px solid #ffa500',
-        background: '#1e1e1e'
+        background: '#1e1e1e',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center'
       }}>
         <p style={{
-          fontSize: '1.2rem',
+          fontSize: '0.7rem',
           background: 'linear-gradient(45deg, #4285f4, #ea4335, #fbbc05, #34a853)',
           WebkitBackgroundClip: 'text',
           backgroundClip: 'text',
           color: 'transparent',
-          marginBottom: '10px'
+          marginBottom: '5px'
         }}>Made with 💖 for Retro Gamers</p>
+
+        {/* Social Icons */}
+        <div style={{
+          display: 'flex',
+          gap: '15px',
+        }}>
+          <a href="https://www.instagram.com/_nostaljoy_" target="_blank" rel="noopener noreferrer"
+            className="social-icon">
+            <i className="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/@NostalJoyIG" target="_blank" rel="noopener noreferrer"
+            className="social-icon">
+            <i className="fa-brands fa-youtube"></i>
+          </a>
+          <a href="/feedback" className="social-icon">
+            <i className="fa-solid fa-comment-dots"></i>
+          </a>
+        </div>
+
         <p style={{
           color: '#fff',
-          fontSize: '0.9rem'
+          fontSize: '0.5rem',
+          lineHeight: '1.6',
         }}>© 2025 NostalJoy - Bringing back the classics!</p>
       </footer>
     </div>
