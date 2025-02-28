@@ -1,5 +1,14 @@
 [
-    { "name": "Bounce Tales", "link": "/games/bounce_tales_240x320.jar" },
-    { "name": "Asphalt 5: Nitro Rush", "link": "/games/asphaltstr_240x320.jar" }
-  ]
-  
+  {
+    "name": "Bounce Tales",
+    "link": "/games/bounce_tales_240x320.jar"
+  },
+  {
+    "name": "Rally 3D",
+    "link": "/games/rally_3d_240x320.jar"
+  },
+  {
+    "name": "Asphalt 5: Nitro Rush",
+    "link": "/games/asphaltstr_240x320.jar"
+  }
+]

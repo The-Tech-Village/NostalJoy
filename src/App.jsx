@@ -140,7 +140,7 @@ const App = () => {
         <p style={{
           color: '#fff',
           fontSize: '0.9rem'
-        }}>© 2023 NostalJoy - Bringing back the classics!</p>
+        }}>© 2025 NostalJoy - Bringing back the classics!</p>
       </footer>
     </div>
   );
