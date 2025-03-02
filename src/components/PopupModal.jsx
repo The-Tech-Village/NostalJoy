@@ -81,9 +81,8 @@ const PopupModal = ({ isOpen, setIsOpen }) => {
           <iframe
             width="100%"
             height="315"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="Retro Gaming Montage"
-            frameBorder="0"
+            src="https://youtube.com/embed/q6CMDKL0UyY?si=2RWpSJhWDPa7DvVE"
+            title="Tutorial"
             allowFullScreen
             style={{ borderRadius: '10px' }}
           ></iframe>
